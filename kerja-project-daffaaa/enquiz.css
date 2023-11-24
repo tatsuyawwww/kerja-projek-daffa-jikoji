@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#settings-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#questions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.question-input {
+  width: 60px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#submit-btn {
+  display: block;
+  margin: 20px auto;
+}
+
+#results-container {
+  margin-top: 20px;
+}
+
+.correct-answer {
+  color: green;
+}
+
+.incorrect-answer {
+  color: red;
+}
+
+#instructions-section {
+  margin-top: 20px;
+}
+
+.instructions {
+  margin-bottom: 20px;
+}
+
+.instructions h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.instructions p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
