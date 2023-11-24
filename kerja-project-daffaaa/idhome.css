@@ -1,0 +1,512 @@
+
+body {
+  background-color: #001F3F;
+  margin:0px;
+ }
+ 
+ 
+ * {
+   margin: 0;
+   padding: 0;
+ }
+ /* 
+ 
+ li {
+ display: inline-block;
+ 
+ 
+ }
+ 
+ li a {
+ 
+ color: white;
+ font-size:0.9em;
+ text-decoration: none;
+ transition: #ADD8E6 0.3s;
+ padding-left: 40px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+ 
+ }
+ 
+ li a:hover {
+ color:#ADD8E6;
+ } */
+ 
+ #logo {
+   width:44px;
+   height:44px;
+   padding-top:16px;
+   padding-left:22px;
+ }
+ 
+ h4 {
+ 
+   margin-top: 22px;
+   font-family:'Roboto Condensed', Helvetica, sans-serif;
+   color:#ADD8E6;
+   padding-left: 10px;
+   font-size: 25px;
+   letter-spacing: 2px;
+ 
+ }
+ 
+ .logo img{
+   position:absolute;
+   left:auto;
+   
+ }
+ 
+ 
+ 
+ 
+ 
+ .moto {
+   /* margin-left:20px; */
+   text-transform: capitalize;
+   color: white;
+ }
+ 
+ .moto h1{
+   font-family:"Lato", sans-serif;
+   font-size:50px;
+   text-align: center;
+ }
+ 
+ .moto p{
+   font-family: "Roboto-Condensed", "Arial", "sans-serif";
+ }
+ 
+ 
+ #dropdown {
+   margin-left:22px;
+ 
+ }
+ 
+ 
+ 
+ 
+ #dropdown-content {
+   position:absolute;
+   background-color: lightgray;
+   margin-left:495px;
+   margin-top:15px;
+   width:200px;
+   text-align: center; 
+   visibility: hidden;
+   
+     
+ }
+ 
+ 
+ 
+ #dropdown-content a {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-decoration: none;
+   font-size:16px;
+   display:block;
+ 
+ }
+ 
+ #dropdown-content #menu1:hover , #menu2:hover {
+   background-color: tomato;
+ 
+   
+ } 
+ 
+ #button-kana-info {
+   background-color: #001F3F;
+   font-size:18px;
+   margin-left:5px;
+   margin-bottom:100px;
+   padding:15px;
+   cursor:pointer;
+   border-radius:15px;
+   color: cyan;
+   width:170px;
+ 
+ }
+ 
+ #button-kana-info:hover {
+   filter: brightness(2);
+ 
+ 
+ }
+ 
+ #pre {
+   font-size:40px;
+   font-family:Arial, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin-left:80px;
+   font-style: italic;
+   
+ }
+ 
+ #pre mark {
+   background-color:slateblue;
+ }
+ 
+ #whyus {
+ 
+   background-color: white;
+   width:100%;
+   height:770px;
+   background-image: url(Images/PINK\ GIRL.jpg);
+   background-size:cover;
+   margin: 0;
+   margin-top:100px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ #whyus .moto2 {
+   font-size:45px;
+   margin-left: 1050px;
+   color: black;
+   font-family: 'Arial', 'sans-serif';
+   position: relative;
+   top: 30px;
+ }
+ 
+ #whyus .mainsub  {
+   margin-top:75px;
+   margin-left:910px;
+   color: tomato;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 30px;
+   letter-spacing: 0.2em;
+   white-space: nowrap;
+  
+ 
+ 
+ }
+ 
+ #whyus .mainsubcon {
+   margin-left: 910px;
+   color: tomato;
+   font-family: 'Arial Narrow', Arial, sans-serif;
+   font-size:16px;
+   margin-top:32px;
+ }
+ 
+ 
+ 
+ 
+ #theysay{
+   width: 100%;
+   height: 770px;
+   background-color: tomato;
+   
+ }
+ 
+ #clientbox {
+   position:absolute;
+   width: 250px;
+   height: 220px;
+   background-color: lightskyblue;
+   left:90px;
+   margin-top:340px;
+   padding-bottom:25px;
+   
+ }
+ 
+ 
+ 
+ 
+ * {
+   box-sizing: border-box;
+   &::before, &::after {
+     box-sizing: border-box;
+   }
+ }
+ 
+ 
+ 
+ .container {
+   margin: 0 auto;
+   padding: 4rem;
+   width: 48rem;
+   background-color: skyblue;
+ }
+ 
+ .accordion {
+   .accordion-item {
+     border-bottom: 1px solid #e5e5e5;
+     button[aria-expanded='true'] {
+       border-bottom: 1px solid #03b5d2;
+     }
+   }
+   button {
+     position: relative;
+     display: block;
+     text-align: left;
+     width: 100%;
+     padding: 1em 0;
+     color: #7288a2;
+     font-size: 1.15rem;
+     font-weight: 400;
+     border: none;
+     background: none;
+     outline: none;
+     &:hover, &:focus {
+       cursor: pointer;
+       color:  #03b5d2;
+       &::after {
+         cursor: pointer;
+         color:  #03b5d2;
+         border: 1px solid  #03b5d2;
+       }
+     }
+     .accordion-title {
+       padding: 1em 1.5em 1em 0;
+     }
+     .icon {
+       display: inline-block;
+       position: absolute;
+       top: 18px;
+       right: 0;
+       width: 22px;
+       height: 22px;
+       border: 1px solid;
+       border-radius: 22px;
+       &::before {
+         display: block;
+         position: absolute;
+         content: '';
+         top: 9px;
+         left: 5px;
+         width: 10px;
+         height: 2px;
+         background: currentColor;
+       }
+       &::after {
+         display: block;
+         position: absolute;
+         content: '';
+         top: 5px;
+         left: 9px;
+         width: 2px;
+         height: 10px;
+         background: currentColor;
+       }
+     }
+   }
+   button[aria-expanded='true'] {
+     color:  #03b5d2;
+     .icon {
+       &::after {
+         width: 0;
+       }
+     }
+     + .accordion-content {
+       opacity: 1;
+       max-height: 9em;
+       transition: all 200ms linear;
+       will-change: opacity, max-height;
+     }
+   }
+   .accordion-content {
+     opacity: 0;
+     max-height: 0;
+     overflow: hidden;
+     transition: opacity 200ms linear, max-height 200ms linear;
+     will-change: opacity, max-height;
+     p {
+       font-size: 1rem;
+       font-weight: 300;
+       margin: 2em 0;
+     }
+   }
+ }
+ 
+ 
+ 
+ 
+ .nav {
+   background-color: slateblue;
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 20px;
+   
+ }
+ .nav ul {
+   display: flex;
+   list-style: none;
+ }
+ .nav ul a {
+   margin-right: 80px;
+   list-style: none;
+   color: white;
+   font-size:20px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+ 
+ }
+ .nav ul a:hover {
+   color:yellow;
+ }
+ .Logo {
+   display: flex;
+   align-items: center;
+ }
+ .Logo span {
+   margin-left: 12px;
+   color: lightskyblue;
+   font-weight: bold;
+   font-size: 24px}
+ 
+ 
+ 
+ 
+  
+ 
+ 
+   .dropdown {
+     position: relative;
+     display: inline-block;
+     font-family: Arial, Helvetica, sans-serif;
+     color: white;
+     font-weight: bold;
+     
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: white;
+     width: 150px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     
+     z-index: 1;
+    
+     margin-top:10px;
+   
+ 
+   }
+ 
+ 
+ 
+   .dropdown-content button a {
+     color: limegreen;
+     font-size:15px;
+     margin:auto;
+   
+      
+   }
+ 
+   .dropdown-content button a:hover {
+     color: tomato;
+     font-size:15px;
+      
+   }
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+     text-align: center;
+     color: limegreen;
+ 
+     
+ 
+   }
+ 
+ 
+   
+ .faq-header{
+   font-size: 42px;
+   border-bottom: 1px dotted #ccc;
+   padding: 24px;
+   text-align: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ .faq-content {
+   margin: 0 auto;
+ }
+ 
+ .faq-question {
+   padding: 20px 0;
+   border-bottom: 1px dotted #ccc;
+ }
+ 
+ .panel-title {
+   font-size: 24px;
+   width: 100%;
+   position: relative;
+   margin: 0;
+   padding: 10px 10px 0 48px;
+   display: block;
+   cursor: pointer;
+ }
+ 
+ .panel-content {
+   font-size: 20px;
+   padding: 0px 14px;
+   margin: 0 40px;
+   height: 0;
+   overflow: hidden;
+   z-index: -1;
+   position: relative;
+   opacity: 0;
+   -webkit-transition: .4s ease;
+   -moz-transition: .4s ease;
+   -o-transition: .4s ease;
+   transition: .4s ease;
+ }
+ 
+ .panel:checked ~ .panel-content{
+   height: auto;
+   opacity: 1;
+   padding: 14px;
+ }
+ 
+ .plus {
+   position: absolute;
+   margin-left: 20px;
+   margin-top: 4px;
+   z-index: 5;
+   font-size: 42px;
+   line-height: 100%;
+   -webkit-user-select: none;    
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -o-user-select: none;
+   user-select: none;
+   -webkit-transition: .2s ease;
+   -moz-transition: .2s ease;
+   -o-transition: .2s ease;
+   transition: .2s ease;
+ }
+ 
+ .panel:checked ~ .plus {
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   transform: rotate(45deg);
+ }
+ 
+ .panel {
+   display: none;
+ }
+ 
+ 
+ .dropdown-content a {
+   text-wrap:nowrap;
+   color: tomato;
+ }
+ 
+ 
+ 
+ 
+ 
+ .study-materials {
+   width:100%;
+   height:750px;
+   background-color: tomato;
+   padding-top: 80px;
+ }
+ 
+ 
